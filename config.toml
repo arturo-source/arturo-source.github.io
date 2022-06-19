@@ -1,4 +1,4 @@
-baseURL = 'http://arturo-source.github.io/'
+baseURL = 'https	://arturo-source.github.io/'
 languageCode = 'en-us'
 title = 'Arturo-source website'
 theme = 'hugo-PaperMod'
