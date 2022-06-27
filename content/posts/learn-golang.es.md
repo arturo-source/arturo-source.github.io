@@ -13,7 +13,6 @@ Este post está basado en el siguiente vídeo de mi canal. Este vídeo está en 
 Las cosas que necesitarás para seguir este tutorial son las siguientes:
 * Un editor (VSCode): https://code.visualstudio.com/
 * El compilador de Go: https://go.dev/dl/
-* Ejemplos sencillos de Go: https://gobyexample.com/
 
 ## "Hola mundo" en Go
 
@@ -49,7 +48,7 @@ package main
 import "fmt"
 
 func main() {
-	// Println sirve para imprimir lo que haya entre "" emn la consola 
+	// Println sirve para imprimir lo que haya entre "" en la consola 
 	fmt.Println("Hola mundo")
 }
 ```
@@ -107,6 +106,32 @@ func main() {
 
 	brilla := true
 	fmt.Println("El valor de brilla es", brilla)
+}
+```
+
+## Operaciones matemáticas en Go
+En todos los lenguajes de programación, existen operaciones matemáticas, como sumar, restar, multiplicar, dividir, etc. Los símbolos que usarás para realizar estas operaciones son los siguientes:
+* `+`: Sirve para sumar
+* `-`: Sirve para restar
+* `*`: Sirve para multiplicar
+* `/`: Sirve para dividir
+* `%`: Es el módulo (resto de la división)
+* `^`: Sirve para elevar a la potencia
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var numero int = 10
+	fmt.Println("El número es", numero)
+	fmt.Println("El número + 1 es", numero+1)
+	fmt.Println("El número - 1 es", numero-1)
+	fmt.Println("El número * 2 es", numero*2)
+	fmt.Println("El número / 2 es", numero/2)
+	fmt.Println("El número % 2 es", numero%2)
+	fmt.Println("El número ^ 2 es", numero^2)
 }
 ```
 
@@ -200,6 +225,52 @@ func main() {
 
 Cabe destacar que podemos usar `if`, `else if` y `else` todos en la misma sentencia. En este caso prueba a copiar el código de arriba y ejecutar de nuevo `go run main.go`. Ahora prueba a cambiar los valores de las alturas para ver los distintos resultados. Verás que lo que aparece en la terminal va cambiando.
 
+### Más de una condición en un if
+Puedes usar más de una condición en un if. Los operadores que se usan para añadir más condiciones a un if son:
+* `&&` Para indicar que se deben cumplir ambas condiciones.
+* `||` Para indicar que se debe cumplir al menos una condición.
+* `!` Para indicar que se debe cumplir la condición contraria.
+
+Veamos el siguiente ejemplo:
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var hora int = 12
+	if hora > 8 && hora < 18 {
+		fmt.Println("Estamos en horario de trabajo")
+	} else {
+		fmt.Println("Estamos fuera de horario de trabajo")
+	}
+}
+```
+
+Podemos ver que si la hora es mayor a 8 y menor a 18, el programa imprime "Estamos en horario de trabajo", es decir, que la hora ha de estar entre esos dos valores, pero no que sea exactamente esos valores. Si quisiéramos incluir las 8 y las 18 usaríamos los operadores que ya conocemos `>=` y `<=`.
+
+La operación con `||` se entiende fácilmente porque es una operación lógica que se ejecuta si alguna de las condiciones es verdadera. A diferencia de `&&` que solo se ejecuta si ambas condiciones son verdaderas.
+
+Pero lo que falta por saber es cómo se utiliza `!`. Veamos el siguiente ejemplo:
+
+```go
+package main
+
+ import "fmt"
+ 
+ func main() {
+	 var dinero int = -5
+	 if !(dinero > 0) {
+		 fmt.Println("Tienes un saldo negativo")
+	 }
+ }
+```
+
+Ahora si has ejecutado este programa con `go run main.go` obtendrás que el programa imprime "Tienes un saldo negativo". Esto es porque dinero NO es mayor a cero, `dinero > 0` equivale a `false`, pero el operador `!` lo cambia a verdadero.
+
+Obtendríamos el mismo resultado si habíamos puesto la sentencia `dinero <= 0` que es justo lo contrario a `dinero > 0`.
+
 ## Arrays en Golang
 Si queremos tener un conjunto de datos en todos los lenguajes, no vamos declarando las variables una a una, como hemos hecho hasta ahora altura_claudio, altura_victor, etc. Lo que haremos será utilizar un Array. La sintaxis sería la siguiente:
 
@@ -279,5 +350,115 @@ Además, al final del `Println` hemos escrito `alturas[i]`. Cuando usamos los co
 
 Existen más formas de utilizar el `for`, pero con esto ya sabremos lo más básico.
 
+### Otro tipo de bucle en Go
+Hay que aclarar que en otros lenguajes se tiene la posibilidad de utilizar `while`. En Go no existe esta palabra reservada, pero podemo hacer uso de `for` como si se tratase de un `while`.
+
+El `while` es un bucle que se ejecuta mientras la condición es verdadera. Es parecido al if ya que solo tenemos que escribir la condición y el cuerpo del bucle.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	i := 0
+	for i <= 10 {
+		fmt.Println(i)
+		i++
+	}
+}
+```
+
+Este programa debería hacer lo mismo que el primero que hemos escrito en la explicación de los bucles, el bucle se ejecutará 11 veces, y escribirá los números del 0 al 10.
+
 ## Último repaso para refrescar las condiciones y los bucles
-A estas alturas ya deberías saber utilizar los `if` y los `for`. Ahora vamos a combinar ambos para comprenderlos a la perfección. (min 12:50....)
+A estas alturas ya deberías saber utilizar los `if` y los `for`. Ahora vamos a combinar ambos para comprenderlos a la perfección. Vamos a recorrer todos los valores de un array y decidir si es lo suficientemente alto.
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	var alturas []float32 = []float32{1.70, 1.70, 1.63, 1.65}
+	fmt.Println(alturas)
+
+	for i := 0; i < len(alturas); i++ {
+		if alturas[i] > 1.65 {
+			fmt.Println("La persona número", i, "es bastante alto")
+		} else {
+			fmt.Println("La persona número", i, "es no es suficientemente alto")
+		}
+	}
+}
+```
+
+Prueba a ejecutar el código con `go run main.go` y entiende la salida.
+
+## Funciones en Go
+Lo último que tienes que aprender para conocer lo más básico de la programación es las funciones. Las funciones son una forma de organizar nuestra código, y es una forma de reutilizar código. Les debemos dar un nombre que haga que el código resulte más fácilmente legible.
+
+En Go escribiremos la palabra `func`, luego el nombre de la función, y después entre paréntesis los argumentos que recibe la función.
+
+```go
+package main
+
+import "fmt"
+
+func CalculaPrecioConIVA(precio float32) float32 {
+	return precio * 1.21
+}
+
+func main() {
+	precio := CalculaPrecioConIVA(10.0)
+	fmt.Println(precio)
+}
+```
+
+Como podemos ver, la función `CalculaPrecioConIVA` recibe un argumento de tipo `float32`, y devuelve un argumento de tipo `float32`. No es necesario que todas las funciones devuelvan algo, pero si lo devuelven, tenemos que poner después de cerrar el paréntesis `)` y antes de abrir el corchete `{` el tipo de variable que devuelve la función.
+
+Si quisiéramos crear una función que no devuelva nada, sería tan sencillo como lo siguiente:
+
+```go
+package main
+
+import "fmt"
+
+func DiHolaA(nombre string) {
+	fmt.Println("Hola", nombre)
+}
+
+func main() {
+	DiHolaA("Arturo")
+}
+```
+
+Dentro de las funciones podemos introducir toda la lógica que queramos, no hace falta que sea de pocas lineas como hemos hecho hasta ahora. Por ejemplo, vamos a avanzar un poquito con la dificultad y vamos a verificar si un número es primo:
+
+Un número es primo si solo es divisible por 1 y por sí mismo.
+
+```go
+package main
+
+import "fmt"
+
+func EsPrimo(numero int) bool {
+	for i := 2; i < numero; i++ {
+		if numero%i == 0 {
+			return false
+		}
+	}
+	return true
+}
+
+func main() {
+	fmt.Println("¿Es primo el número 7?", EsPrimo(7))
+}
+```
+
+Esta función es algo más difícil que las primeras porque contiene más de un return, pero es perfecta para entender lo sencillo que es escribir una lógica desde palabras humanas a una función.
+
+## Conclusión
+Si has llegado hasta aquí, espero que hayas entendido todo lo que hemos visto en este post. Si no, no te preocupes, podemos volver a leerlo las veces que quieras. Para no extender más el post, lo que voy a recomendarte es que, una vez entendidos todos los conceptos que se explican, vayas a la página https://gobyexample.com/ en la cual encontrarás más ejemplos que van escalando de dificultad pero que son cosas más potentes que te ayudarán a explotar al máximo tus conocimientos en programación.
+
+Y no olvides compartir este post a tus compañeros que estén aprendiendo Go.
