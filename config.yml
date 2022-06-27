@@ -3,13 +3,62 @@ languageCode: en-us
 title: Arturo-source website
 theme: hugo-PaperMod
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+
 defaultContentLanguage: en
 
 languages:
-    en:
-        languageName: "English"
-        weight: 1
+  en:
+    languageName: ":uk:"
+    languageAltTitle: English
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: archive
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 10
 
-    es:
-        languageName: "Español"
-        weight: 2
+  es:
+    languageName: ":es:"
+    languageAltTitle: Español
+    weight: 2
+    menu:
+      main:
+        - name: Archive
+          url: archive
+          weight: 5
+        - name: Buscar
+          url: buscar/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 10
+
+params:
+  socialIcons:
+    - name: github
+      url: "https://github.com/arturo-source"
+    - name: youtube
+      url: "https://www.youtube.com/channel/UCwNJPLF3oMcowVZOKjCEZzg"
+
+  UseHugoToc: true
+  showtoc: true
+  tocopen: false
+  ShowCodeCopyButtons: true
+  displayFullLangName: true
+  ShowBreadCrumbs: true
+  
