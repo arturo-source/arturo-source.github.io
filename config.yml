@@ -1,0 +1,15 @@
+baseURL: https://arturo-source.github.io/
+languageCode: en-us
+title: Arturo-source website
+theme: hugo-PaperMod
+
+defaultContentLanguage: en
+
+languages:
+    en:
+        languageName: "English"
+        weight: 1
+
+    es:
+        languageName: "Español"
+        weight: 2
