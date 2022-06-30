@@ -9,6 +9,12 @@ enableEmoji: true
 
 defaultContentLanguage: en
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
 languages:
   en:
     languageName: ":uk:"
@@ -18,16 +24,10 @@ languages:
       main:
         - name: Archive
           url: archive
-          weight: 5
+          weight: 1
         - name: Search
           url: search/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
-        - name: Categories
-          url: categories/
-          weight: 10
+          weight: 2
 
   es:
     languageName: ":es:"
@@ -35,30 +35,34 @@ languages:
     weight: 2
     menu:
       main:
-        - name: Archive
-          url: archive
-          weight: 5
+        - name: Archivo
+          url: archivo
+          weight: 1
         - name: Buscar
           url: buscar/
-          weight: 10
-        - name: Tags
-          url: tags/
-          weight: 10
-        - name: Categories
-          url: categories/
-          weight: 10
+          weight: 2
+    homeInfoParams:
+      Title: ¡Bienvenido!
+      Content: Soy Arturo, un ingeniero informático enamorado del Software. En este blog escribiré todas las ideas y aportaciones que se me ocurran sobre desarrollo, Linux, e informática en general.
 
 params:
+  homeInfoParams:
+    Title: Welcome!
+    Content: I'm Arturo, a computer engineer in love with Software. I'll post all the ideas and contributions that come to mind about development, Linux, and IT in general at this blog.
   socialIcons:
     - name: github
       url: "https://github.com/arturo-source"
     - name: youtube
       url: "https://www.youtube.com/channel/UCwNJPLF3oMcowVZOKjCEZzg"
-
+    - name: twitter
+      url: "https://twitter.com/ArturoSource"
+  
   UseHugoToc: true
-  showtoc: true
-  tocopen: false
+  ShowToc: true
+  TocOpen: false
   ShowCodeCopyButtons: true
   displayFullLangName: true
   ShowBreadCrumbs: true
-  
+  ShowShareButtons: true
+  ShowReadingTime: true
+  env: production
