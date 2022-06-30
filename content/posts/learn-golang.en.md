@@ -1,5 +1,7 @@
 ---
 title: "Learn Golang from base"
+description: "What's a variable? How to do an if? And a loop? Learn all the basics you need to start programming, in a easy language as Go."
+summary: "What's a variable? How to do an if? And a loop? Learn all the basics you need to start programming, in a easy language as Go."
 date: 2022-06-26T20:59:13+02:00
 draft: false
 ---

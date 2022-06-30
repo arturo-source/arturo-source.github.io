@@ -1,6 +1,8 @@
 ---
 title: "Aprende el lenguaje Go desde 0"
 slug: "aprende-go-desde-cero"
+description: "¿Qué es una variable? ¿Cómo hacer un if? ¿Y un bucle? Aprende todo lo básico que necesitas para empezar a programar en un lenguaje tan sencillo como es Go."
+summary: "¿Qué es una variable? ¿Cómo hacer un if? ¿Y un bucle? Aprende todo lo básico que necesitas para empezar a programar en un lenguaje tan sencillo como es Go."
 date: 2022-06-26T21:00:09+02:00
 draft: false
 ---
