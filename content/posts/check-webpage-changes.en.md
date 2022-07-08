@@ -43,15 +43,15 @@ The variables you'll need to change are:
 Get `url` is very easy, you can copy it from the top of the browser.
 Get `xpaths` is a little harder, once you're in the webpage, you have to right click on it. Then you select "Inspect" option. Then, you'll see an arrow item as next one (left):
 
-![Selector](https://github.com/arturo-source/check-webpage-change/blob/main/images/selector.png)
+![Selector](https://github.com/arturo-source/check-webpage-change/blob/main/images/selector.png?raw=true)
 
 Now you have to select the html item in the webpage, left click on that.
 
-![HTML selected](https://github.com/arturo-source/check-webpage-change/blob/main/images/html-selected.png)
+![HTML selected](https://github.com/arturo-source/check-webpage-change/blob/main/images/html-selected.png?raw=true)
 
 Then, the html code will have been marked, so your last step is to right click on it, and select "Copy" > "XPath"
 
-![Copy Xpath](https://github.com/arturo-source/check-webpage-change/blob/main/images/copy-xpath.png)
+![Copy Xpath](https://github.com/arturo-source/check-webpage-change/blob/main/images/copy-xpath.png?raw=true)
 
 The final step is pasting it on json settings `"Price": "/html/body/main/div[4]/......."` (left is an identificator name, and right one is the xpath), and you'll have the script configured (remember you can add all xpaths, as many as you want). But maybe you want to be notified when any change ocurred, so you have to configure notifications.
 
@@ -66,7 +66,7 @@ It's really easy too, if you've ever used Telegram. I asume you have Telegram ac
 
 You will get a json like the next one:
 
-![Get ChatID](https://github.com/arturo-source/check-webpage-change/blob/main/images/get-chatid.png)
+![Get ChatID](https://github.com/arturo-source/check-webpage-change/blob/main/images/get-chatid.png?raw=true)
 
 Then you can pick the Telegram ChatID and paste it in the json settings too, remember `notify_telegram` has to be `true` to enable notifications. And you'll have script totally configured. But now you have to decide how often you want to be notified.
 

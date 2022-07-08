@@ -49,15 +49,15 @@ Las variables que tendrás que cambiar son:
 
 Obtener `url` es muy fácil, puedes copiarla desde la parte superior del navegador. Obtener los `xpaths` es un poco más difícil, una vez que estás en la página web, debes hacer clic derecho sobre ella. Luego selecciona la opción "Inspeccionar". Luego, verás un elemento de flecha como el siguiente (izquierda):
 
-![Selector](https://github.com/arturo-source/check-webpage-change/blob/main/images/selector.png)
+![Selector](https://github.com/arturo-source/check-webpage-change/blob/main/images/selector.png?raw=true)
 
 Ahora tienes que seleccionar el elemento html en la página web, haz clic izquierdo sobre él.
 
-![HTML seleccionado](https://github.com/arturo-source/check-webpage-change/blob/main/images/html-selected.png)
+![HTML seleccionado](https://github.com/arturo-source/check-webpage-change/blob/main/images/html-selected.png?raw=true)
 
 Luego, el código html estará marcado, por lo que el último paso es hacer clic derecho sobre él y seleccionar "Copiar" > "XPath"
 
-![Copiar Xpath](https://github.com/arturo-source/check-webpage-change/blob/main/images/copy-xpath.png)
+![Copiar Xpath](https://github.com/arturo-source/check-webpage-change/blob/main/images/copy-xpath.png?raw=true)
 
 El último paso es pegarlo en la configuración json `"Price": "/html/body/main/div[4]/......."` (lo de la izquierda es un nombre de identificación y la derecha es el xpath), y tendrás el script configurado (recuerda que puedes agregar todos los xpaths, tantos como quieras).
 
@@ -74,7 +74,7 @@ También es muy sencillo, si alguna vez has usado Telegram. Supondré que tienes
 
 Obtendrás un json como el siguiente:
 
-![Obtener el ChatID](https://github.com/arturo-source/check-webpage-change/blob/main/images/get-chatid.png)
+![Obtener el ChatID](https://github.com/arturo-source/check-webpage-change/blob/main/images/get-chatid.png?raw=true)
 
 Luego, puedes elegir el Telegram ChatID y pegarlo también en la configuración json, recuerda que `notify_telegram` tiene que ser `true` para habilitar las notificaciones. Y tendrás el script totalmente configurado. Pero ahora tienes que decidir con qué frecuencia quieres que el bot te notifique.
 
