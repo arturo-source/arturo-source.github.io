@@ -6,7 +6,7 @@ date: 2022-06-26T20:59:13+02:00
 draft: false
 ---
 
-# Learn Golang, the language developed by Google
+## Learn Golang, the language developed by Google
 
 This post is based on the following video on my channel. This video is in Spanish, but if you know Spanish, you can see it here:
 

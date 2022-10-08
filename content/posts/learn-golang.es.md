@@ -7,7 +7,7 @@ date: 2022-06-26T21:00:09+02:00
 draft: false
 ---
 
-# Aprender Golang, el lenguaje desarrollado por Google
+## Aprender Golang, el lenguaje desarrollado por Google
 
 Este post está basado en el siguiente vídeo de mi canal. Este vídeo está en español y podrás verlo aquí:
 
