@@ -9,6 +9,8 @@ draft: false
 
 A pesar de que [en el anterior post](/es/posts/aprende-go-desde-cero/) se explicasen todas las bases necesarias para comenzar a aprender en la programación, lo que voy a mostrar ahora son conceptos algo más avanzados, los cuales ya no conforman algo básico y necesario para comenzar a programar. Quiero que sirvan como ejemplo de cómo continuar aprendiendo, y por último, dejaré unos recursos para que podáis seguir aprendiendo por vuestra cuenta. Después de eso solo faltará que imaginéis qué es lo que queréis programar después.
 
+{{< youtube CK6tTM4rv0I >}}
+
 ## Recursión en Go
 
 La recursión es algo que existe en muchos lenguajes, y que se utiliza en algunos problemas informáticos debido a que algunos problemas resultan ser más sencillos de resolver. Sin embargo, es algo que a la gente le suele costar más entender porque no es tan fácil seguir el flujo del programa.
