@@ -37,7 +37,7 @@ func SendMessage(msg string) error {
 }
 ```
 
-Send a text message with **PHP**: [(referencia del código)](https://stackoverflow.com/a/32875341)
+Send a text message with **PHP**: [(code reference)](https://stackoverflow.com/a/32875341)
 
 ```php
 function sendMessage($chatID, $messaggio, $token) {
@@ -77,7 +77,7 @@ const sendMessage = async (message) => {
 };
 ```
 
-Send a text message with **Python**: [(referencia del código)](https://medium.com/codex/using-python-to-send-telegram-messages-in-3-simple-steps-419a8b5e5e2)
+Send a text message with **Python**: [(code reference)](https://medium.com/codex/using-python-to-send-telegram-messages-in-3-simple-steps-419a8b5e5e2)
 
 ```python
 import requests
@@ -89,7 +89,7 @@ response = requests.get(url)
 print(response.json())
 ```
 
-Send a text message with **curl**: [(referencia del código)](https://gist.github.com/dideler/85de4d64f66c1966788c1b2304b9caf1)
+Send a text message with **curl**: [(code reference)](https://gist.github.com/dideler/85de4d64f66c1966788c1b2304b9caf1)
 
 ```bash
 curl -X POST \
@@ -100,7 +100,7 @@ curl -X POST \
 
 It is done in a similar way In all languages, however, to know all the options that Telegram allows us to use, [I recommend reading its documentation](https://core.telegram.org/bots/api#sendmessage).
 
-## Crear un bot en Telegram
+## Create a Telegram bot
 
 > Ok Arturo, we already know how to send a message, but what about the TOKEN and the CHAT_ID?
 
@@ -112,6 +112,6 @@ Now the CHAT\_ID is missing. This parameter already depends on how complete we w
 
 There is nothing else to do, copy these two variables in your code, or save them as environment variables (**recommended** for security), or pass them as a parameter to the function as in the PHP example. Sending a message with a bot is that simple, the rest of the logic I leave to you, you can combine it with an arduino to notify you of the humidity in the house, to notify you when your team scores a goal... limit is in your imagination.
 
-### Bibliotecas para crear bots en Telegram
+### Telegram libraries to create a bot
 
 Of course, if what you want is to make a more complex bot, that sends photos, responds to messages, or other functionalities, I do not recommend that you implement the code yourself. With a simple Google search like “Telegram bot library in…” you add your favorite language, you will find thousands. I also recommend looking directly at [Telegram's own recommended libraries](https://core.telegram.org/bots/samples).
