@@ -7,6 +7,8 @@ summary: "Programa tu primer bot de Telegram sin ninguna dependencia, con puro c
 draft: false
 ---
 
+{{< youtube gG38K9Crecs >}}
+
 Algunos de vosotros conoceréis la aplicación Telegram. Se trata de una aplicación de mensajería instantánea con muchas funcionalidades, entre ellas, crear tus propios bots. Esto puede resultar muy útil en distintas ocasiones, que es posible que presente en futuros post, pero de momento esto lo dejo a vuestra imaginación.
 ‌
 Lo único que necesitamos para crear un bot en Telegram es:
