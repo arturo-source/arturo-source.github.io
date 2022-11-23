@@ -196,6 +196,10 @@ function generateFood() {
 Lo único que nos falta para que esto sea un juego convencional es un main loop, y un estado inicial. Esto sirve para saber cómo empieza el juego, y ejecutar todos los sistemas en orden. Además he añadido una función auxiliar (isGameOver) para saber si la serpiente está muerta. Por lo general haríamos un **sistema de vida** para controlar esto, pero este juego es tan simple que no lo necesita.
 
 ```js
+function isGameOver() {
+    return isSnakeOutOfGame() || isSnakeEatingItself();
+}
+
 // Main game loop
 function main() {
     if (isGameOver()) {

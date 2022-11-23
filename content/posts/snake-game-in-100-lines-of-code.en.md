@@ -195,6 +195,10 @@ function generateFood() {
 The only thing missing for this to be a conventional game is a main loop, and an initial state. This is to know how the game starts, and run all systems in order. I have also added a helper function (isGameOver) to know if the snake is dead. Usually we would make a **life system** to control this, but this game is so simple it doesn't need it.
 
 ```js
+function isGameOver() {
+    return isSnakeOutOfGame() || isSnakeEatingItself();
+}
+
 // Main game loop
 function main() {
     if (isGameOver()) {
