@@ -1,5 +1,5 @@
 ---
-title: "Best Practices in Go"
+title: "Buenas prácticas programando en Go"
 slug: "buenas-practicas-en-go"
 description: "Conoce las mejores prácticas para tener un código mantenible en el tiempo para el lenguaje Golang"
 summary: "Conoce las mejores prácticas para tener un código mantenible en el tiempo para el lenguaje Golang"
