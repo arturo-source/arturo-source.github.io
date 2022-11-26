@@ -25,7 +25,42 @@ function drawGame() {
 }
 ```
 
-Otra buena práctica común a todos los lenguajes es intentar evitar el código espagueti. Esto significa que si tu código tiene un if, dentro de otro if, etc. y queda mucho espacio a la izquierda, probablemente tengas que refactorizarlo (esto aplica también a los bucles). (buscar un ejemplo para ponerlo).
+Otra buena práctica común a todos los lenguajes es intentar evitar el código espagueti. Esto significa que si tu código tiene un if, dentro de otro if, etc. y queda mucho espacio a la izquierda, probablemente tengas que refactorizarlo (esto aplica también a los bucles).
+
+```go
+func spaghettiCode(u User) {
+    if u.Name != "" {
+        if u.Address != "" {
+            if u.Email != "" {
+                // Do something
+            } else {
+                // Do something with wrong email
+            }
+        } else {
+            // Do something with wrong address
+        }
+    } else {
+        // Do something with wrong name
+    }
+}
+
+func noSpaghettiCode(u User) {
+    if u.Name == "" {
+        // Do something with wrong name
+        return
+    }
+    if u.Address == "" {
+        // Do something with wrong address
+        return
+    }
+    if u.Email == "" {
+        // Do something with wrong email
+        return
+    }
+
+    // Do something
+}
+```
 
 ### El nombrado de variables/funciones/archivos
 
