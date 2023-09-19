@@ -18,7 +18,6 @@ outputs:
 languages:
   en:
     languageName: ":uk:"
-    languageAltTitle: English
     weight: 1
     menu:
       main:
@@ -28,10 +27,11 @@ languages:
         - name: Search
           url: search/
           weight: 2
+    params:
+      languageAltTitle: English
 
   es:
     languageName: ":es:"
-    languageAltTitle: Español
     weight: 2
     menu:
       main:
@@ -41,9 +41,11 @@ languages:
         - name: Buscar
           url: buscar/
           weight: 2
-    homeInfoParams:
-      Title: ¡Bienvenido!
-      Content: Soy Arturo, un ingeniero informático enamorado del Software. En este blog escribiré todas las ideas y aportaciones que se me ocurran sobre desarrollo, Linux, e informática en general.
+    params:
+      languageAltTitle: Español
+      homeInfoParams:
+        Title: ¡Bienvenido!
+        Content: Soy Arturo, un ingeniero informático enamorado del Software. En este blog escribiré todas las ideas y aportaciones que se me ocurran sobre desarrollo, Linux, e informática en general.
 
 params:
   homeInfoParams:
