@@ -51,6 +51,7 @@ params:
   homeInfoParams:
     Title: Welcome!
     Content: I'm Arturo, a computer engineer in love with Software. I'll post all the ideas and contributions that come to mind about development, Linux, and IT in general at this blog.
+  ShowAllPagesInArchive: true # show all 'content' folder, not only /posts/
   socialIcons:
     - name: github
       url: "https://github.com/arturo-source"
@@ -58,7 +59,7 @@ params:
       url: "https://www.youtube.com/@arturosource"
     - name: twitter
       url: "https://twitter.com/ArturoSource"
-  
+
   UseHugoToc: true
   ShowToc: true
   TocOpen: false
