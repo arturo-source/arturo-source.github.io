@@ -1,5 +1,5 @@
 ---
-title: "Buscaminas hecho con react"
+title: "Buscaminas hecho con React"
 slug: "buscaminas-hecho-con-react"
 description: "El conocido juego buscaminas, creado con React, pruébalo ya y mira cómo ha sido hecho."
 summary: "El conocido juego buscaminas, creado con React, pruébalo ya y mira cómo ha sido hecho."
