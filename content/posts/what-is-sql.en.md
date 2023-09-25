@@ -1,5 +1,5 @@
 ---
-title: "What Is SQL?"
+title: "What is SQL?"
 description: "Learn SQL in just a few minutes."
 summary: "Learn SQL in just a few minutes."
 date: 2023-09-12T18:26:15+02:00
