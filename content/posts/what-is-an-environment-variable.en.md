@@ -11,7 +11,7 @@ An environment variable is global data, stored in the operating system, that can
 
 Typically you will use it to manage data that changes between a 'production' environment, and a 'development' environment. So environment variables allow you to change the behavior of your program, without having to change the code.
 
-## What data is stored in Environment Variables?
+## How are they saved in Environment Variables?
 
 You can really save any type of primitive data (you learned about it in [the variables post](/posts/what-is-a-variable/)), in a way as simple as this:
 
@@ -21,20 +21,23 @@ YT_CHANNEL_URL=https://www.youtube.com/@arturosource
 MAX_TIMEOUT=10
 ```
 
-Generally, you will write the environment variable in capital letters, followed by the name of the variable with a `=`, and finally, the value without spaces at the beginning or at the end. But there are several ways to let a program know which variables to use. I will focus on Linux, which is where you will commonly program, and deploy your programs.
-
-1. At the operating system level: it is as simple as editing the `/etc/environment` file, and follows the style that appears above. Use the `nano` text editor, for example, and you will need permissions to edit the file. So the command will be `sudo nano /etc/environment`.
-2. At the program level: If you run an application from the terminal, you can assign as many variables as you want before execution. Using the previous example, you could write a command like this `MY_NAME=Arturo MAX_TIMEOUT=10 bash ./coolbashscript`.
-3. In a file that your application will read: in modern languages you will have a library with which you can read a file as if it had environment variables, commonly it will be called `.env`. You will have to look for the corresponding library for your programming language, and that's it.
+Generally, you will write the environment variable in capital letters, followed by the name of the variable with a `=`, and finally, the value without spaces at the beginning or at the end.
 
 ### What data is most common to store?
 
 Store any data that you think is relevant, with experience you will know which ones should be stored and which ones should not. But here are some examples to get you started.
 
 - **System paths**: Tells a program where to look for executable files, libraries, resources, or configuration files.
-- **Language and region**: Determines the regional and language settings used by your application.
 - **Authentication data**: Stores authentication credentials, such as API keys or passwords.
-- **Settings**: Customize fields such as the listening port, domain name, or debugging level.
+- **Settings**: Customize fields such as listening port, domain name, debugging level, language or region, etc.
+
+### Where to store environment variables?
+
+There are several ways to let a program know which variables to use. I will focus on the Linux operating system, which is where you will commonly program, and deploy your programs.
+
+1. At the operating system level: it is as simple as editing the `/etc/environment` file, and follows the style that appears above. Use the `nano` text editor, for example, and you will need permissions to edit the file. So the command will be `sudo nano /etc/environment`.
+2. At the program level: If you run an application from the terminal, you can assign as many variables as you want before execution. Using the previous example, you could write a command like this `MY_NAME=Arturo MAX_TIMEOUT=10 bash ./coolbashscript`.
+3. In a file that your application will read: in modern languages you will have a library with which you can read a file as if it had environment variables, commonly it will be called `.env`. You will have to look for the corresponding library for your programming language, and that's it.
 
 ## How to use environment variables in your program?
 
