@@ -8,7 +8,9 @@ draft: false
 
 Este es un mini cursillo que te servirá para aprender los conceptos básicos de Go (crear un proyecto, instalar un paquete, hacer peticiones HTTP, etc.). La idea es hacer un bot de Telegram que te dice cuánto tiempo queda para que llegue el siguiente Tram a tu parada. Este es un proyecto de ejemplo, que puedes ampliar, o incluso, seguir mejorando con proyectos totalmente distintos.
 
-Todo el código está disponible en https://github.com/go-telegram-bot-api/telegram-bot-api
+Si quieres usar el bot, puedes hacerlo con una cuenta de telegram desde aquí: <https://t.me/tram_alicante_bot>
+
+Todo el código está disponible en <https://github.com/go-telegram-bot-api/telegram-bot-api>
 
 ## Las herramientas que he utilizado
 
@@ -28,7 +30,7 @@ En este vídeo verás cómo usar tu navegador para ver cómo funciona una web po
 
 {{< youtube ug_TCdWIeXQ >}}
 
-## Scraping de HTML en Go ¡sin librerías!
+## Scraping de HTML en Go ¡sin librerías
 
 Si te quedaste hasta el final del último vídeo, sabrás que un endpoint de la aplicación NO devuelve JSON, sino HTML. Normalmente usarías una librería de web Scraping como [Colly](https://github.com/gocolly/colly), pero aquí aprenderás a hacerlo sin librerías.
 
