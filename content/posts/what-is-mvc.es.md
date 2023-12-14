@@ -5,6 +5,7 @@ description: "Un poco de MVC para convertirte en un pro de la programación."
 summary: "Un poco de MVC para convertirte en un pro de la programación."
 date: 2023-10-01T17:42:58+02:00
 draft: false
+tags: ["mini pildoras"]
 ---
 
 MVC es un patrón de diseño que separa una aplicación en tres componentes clave: Modelo (datos y lógica), Vista (interfaz de usuario) y Controlador (gestión de interacciones y flujo).

@@ -4,6 +4,7 @@ description: "Differences between frontend and backend, how to choose the best o
 summary: "Differences between frontend and backend, how to choose the best one, and how to work with them."
 date: 2023-11-12T16:40:48+01:00
 draft: false
+tags: ["tiny pills"]
 ---
 
 **Frontend** and **Backend** are two sides of the same coin: application development. Whether web, desktop, or mobile applications, you will always find this distinction. And the programmer who works in both disciplines is called **Full Stack**.
