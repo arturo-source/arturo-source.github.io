@@ -1,7 +1,7 @@
 ---
 title: "What is MVC?"
-description: ""
-summary: ""
+description: "A little bit of MVC to become a programming pro."
+summary: "A little bit of MVC to become a programming pro."
 date: 2023-10-01T17:42:52+02:00
 draft: false
 ---
