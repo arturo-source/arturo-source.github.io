@@ -1,5 +1,5 @@
 ---
-title: "What Are Frontend and Backend?"
+title: "What are Frontend and Backend?"
 description: "Differences between frontend and backend, how to choose the best one, and how to work with them."
 summary: "Differences between frontend and backend, how to choose the best one, and how to work with them."
 date: 2023-11-12T16:40:48+01:00
