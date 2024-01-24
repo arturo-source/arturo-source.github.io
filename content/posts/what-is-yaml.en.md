@@ -1,7 +1,7 @@
 ---
 title: "What is YAML?"
-description: ""
-summary: ""
+description: "Learn what YAML is and how to use it, in a few minutes"
+summary: "Learn what YAML is and how to use it, in a few minutes"
 date: 2024-01-23T17:25:06+01:00
 draft: false
 tags: ["tiny pills"]

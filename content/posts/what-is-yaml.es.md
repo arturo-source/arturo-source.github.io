@@ -1,8 +1,8 @@
 ---
 title: "¿Qué es YAML?"
 slug: "que-es-yaml"
-description: ""
-summary: ""
+description: "Aprende qué es cómo usar YAML en unos minutos."
+summary: "Aprende qué es cómo usar YAML en unos minutos."
 date: 2024-01-23T17:25:09+01:00
 draft: false
 tags: ["mini pildoras"]
