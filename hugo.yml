@@ -47,12 +47,13 @@ languages:
         title: ¡Hola mundo!
         subtitle: Soy Arturo, un ingeniero informático al que le encanta el Software. Aquí escribiré todas las ideas y aportaciones que se me ocurran sobre desarrollo, Linux, e informática en general.
         buttons:
-          - name: Artículos
-            url: /es/posts/
-          - name: Etiquetas
-            url: /es/tags/
-          - name: Buscar
-            url: /es/buscar/
+          - name: Calcular equity del Poker con Go
+            url: https://github.com/arturo-source/poker-odds
+          - name: Buscaminas con React
+            url: /minesweeper/
+          - name: Snake en 100 lineas de JS
+            url: /snake-game/
+
 
 params:
   profileMode:
@@ -61,12 +62,12 @@ params:
     subtitle: I'm Arturo, a computer engineer in love with Software. I'll post all the ideas and contributions that come to my mind about development, Linux, and IT in general.
     imageUrl: "https://avatars.githubusercontent.com/u/59207995"
     buttons:
-      - name: Posts
-        url: /posts/
-      - name: Tags
-        url: /tags/
-      - name: Search
-        url: /search/
+      - name: Calculate Poker equity with Go
+        url: https://github.com/arturo-source/poker-odds
+      - name: Minesweeper with React
+        url: /minesweeper/
+      - name: Snake in 100 JS lines
+        url: /snake-game/
 
   # ShowAllPagesInArchive: true # show all 'content' folder, not only /posts/
   socialIcons:
