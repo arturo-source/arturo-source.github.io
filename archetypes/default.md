@@ -4,6 +4,6 @@ slug: "Only for Spanish posts"
 description: ""
 summary: ""
 date: {{ .Date }}
-draft: true
+draft: false
 ---
 
