@@ -63,7 +63,7 @@ params:
     imageUrl: "https://avatars.githubusercontent.com/u/59207995"
     buttons:
       - name: Calculate Poker equity (using WASM)
-        url: http://localhost:1313/posts/execute-golang-in-browser/#use-poker-odds
+        url: /posts/execute-golang-in-browser/#use-poker-odds
       - name: Minesweeper with React
         url: /minesweeper/
       - name: Snake in 100 JS lines
