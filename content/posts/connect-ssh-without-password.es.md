@@ -7,7 +7,7 @@ date: 2024-03-13T12:26:20+01:00
 draft: false
 ---
 
-Para conectarte a un servidor, normalmente usarías `ssh user@domain.com`, y para copiar un archivo `scp file.txt user@domain.com:/home/user/`. Después del ejecutar el comando, te pedirá la contraseña de `user`, pero esto es poco seguro, y pesado. La forma correcta es utilizar un par de claves pública-privada, y de esa forma no tendrás que volver a ingresar la contraseña.
+Para conectarte a un servidor, normalmente usarías `ssh user@domain.com`, y para copiar un archivo `scp file.txt user@domain.com:/home/user/`. Después de ejecutar el comando, te pedirá la contraseña de `user`, pero esto es poco seguro, y pesado. La forma correcta es utilizar un par de claves pública-privada, y de esa forma no tendrás que volver a ingresar la contraseña.
 
 ## Generar claves SSH
 
@@ -36,11 +36,11 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-El "randomart image" variará, ya que la clave que se ha generado es distinta cada vez que se ejecuta. Puedes cambiar los valores del prompt, como la ruta donde se guarda la clave. En este caso, mis claves pública y privada han sido almacenadas en `/home/arturo/.ssh/`, con el nombre de `id_rsa.pub` y `id_rsa`.
+El "randomart image" variará, ya que la clave que se ha generado es distinta cada vez que se ejecuta. Puedes cambiar los valores del prompt, como la ruta donde se guarda la clave. En este caso, mis claves pública y privada han sido almacenadas en `/home/arturo/.ssh/` (abreviado `~/.ssh/`), con el nombre de `id_rsa.pub` y `id_rsa`.
 
 ## Logearte en el servidor sin usar contraseña
 
-El segundo (y último) paso es hacer que el servidor te pueda identificar. Para ello, tendrás que copiar tu clave pública `/home/arturo/.ssh/id_rsa.pub` en el servidor. La forma más sencilla de hacerlo es `ssh-copy-id -i /home/arturo/.ssh/id_rsa.pub user@domain.com`. Te aparecerá el siguiente prompt en el que tienes que poner la contraseña de `user`:
+El segundo (y último) paso es hacer que el servidor te pueda identificar. Para ello, tendrás que copiar tu clave pública `~/.ssh/id_rsa.pub` en el servidor. La forma más sencilla de hacerlo es `ssh-copy-id -i ~/.ssh/id_rsa.pub user@domain.com`. Te aparecerá el siguiente prompt en el que tienes que poner la contraseña de `user`:
 
 ```sh
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/arturo/.ssh/id_rsa.pub"
@@ -53,13 +53,13 @@ Simplemente introduce la contraseña de `user` y ya podrás acceder al servidor 
 
 ### Alternativa sin ssh-copy-id
 
-Una forma alternativa, si no quieres (o no puedes) usar `ssh-copy-id`, es copiar tu clave pública manualmente en el servidor. Para ello, tendrás que copiar el contenido de `/home/arturo/.ssh/id_rsa.pub`, para verlo ábrelo, o ejecuta `cat /home/arturo/.ssh/id_rsa.pub`:
+Una forma alternativa, si no quieres (o no puedes) usar `ssh-copy-id`, es copiar tu clave pública manualmente en el servidor. Para ello, tendrás que copiar el contenido de `~/.ssh/id_rsa.pub`, para verlo ábrelo, o ejecuta `cat ~/.ssh/id_rsa.pub`:
 
 ```txt
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCY+hLD34jAoCrin5sRN1mclVxhaykt0pRdvsLxFJxypkwALqb18nx3ryYNNKygWnpmR4hmD19wHGVZZi7nUrgUcMbES03RvOdigIasfgjGR/dijs3b+HhEZ+iyJJjkOQumEm+0en4lKsh8nWecrb6FsMLRXBvPsB5lhr4bu15dP7/Ui/55LRyP/6MpszhQufS6xlaWXa2lY1dRPY/XDuWE+datnsZAPqn6KM2TQOQAvo1IPj3lwShMLuyzEfwSMQKBM+y+ltu0k/ogra1pk+PRcGEqEnjkojTmS/tigOoa9u+Zo4CDBCsTjZViaFI6aRs/+FHmfrmlWz91J1dleMhp8feIlsfhnwAFRvRvd6yYzY8N10MnixwRjw1cyNDwJgBojmjfHsz879KtkF4lQ934e1nXIrIPos7thT7tx0e4TEpmNZiB5XpIPZe8AERzyYTNqFN9pOVRIlelakjATKxrjiiNZTVJrbcMA7yIXb8BgW0kyJb1AZgSUFqcpOsLQE= arturo@localhost
 ```
 
-Entonces, accede al servidor, puede que tengas una forma de acceder sin SSH, porque algunos proveedores de VPS te permitirán acceder de otras formas. Sino, simplemente `ssh user@domain.com`. Abre el archivo `/home/user/.ssh/authorized_keys`, o créalo si no existe, ejecutando `nano /home/user/.ssh/authorized_keys`.
+Entonces, accede al servidor, puede que tengas una forma de acceder sin SSH, porque algunos proveedores de VPS te permitirán acceder de otras formas. Sino, simplemente `ssh user@domain.com`. Abre el archivo `/home/user/.ssh/authorized_keys` (abreviado `~/.ssh/authorized_keys`), o créalo si no existe, ejecutando `nano ~/.ssh/authorized_keys`.
 
 Por último, pega el contenido que acabas de copiar. Ya deberías poder acceder al servidor con `ssh user@domain.com` desde tu máquina.
 

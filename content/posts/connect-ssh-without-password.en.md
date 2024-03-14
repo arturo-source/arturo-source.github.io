@@ -35,11 +35,11 @@ The key's randomart image is:
 +----[SHA256]-----+
 ```
 
-The "randomart image" will vary, since the key that has been generated is different each time it is run. You can change the prompt values, such as the path where the key is saved. In this case, my public and private keys have been stored in `/home/arturo/.ssh/`, with the name `id_rsa.pub` and `id_rsa`.
+The "randomart image" will vary, since the key that has been generated is different each time it is run. You can change the prompt values, such as the path where the key is saved. In this case, my public and private keys have been stored in `/home/arturo/.ssh/` (shortened `~/.ssh/`), with the name `id_rsa.pub` and `id_rsa`.
 
 ## Log in to the server without using a password
 
-The second (and last) step is to make the server identify you. To do this, you will have to copy your public key `/home/arturo/.ssh/id_rsa.pub` to the server. The easiest way to do this is `ssh-copy-id -i /home/arturo/.ssh/id_rsa.pub user@domain.com`. The following prompt will appear in which you have to enter the `user` password:
+The second (and last) step is to make the server identify you. To do this, you will have to copy your public key `~/.ssh/id_rsa.pub` to the server. The easiest way to do this is `ssh-copy-id -i ~/.ssh/id_rsa.pub user@domain.com`. The following prompt will appear in which you have to enter the `user` password:
 
 ```sh
 /usr/bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/arturo/.ssh/id_rsa.pub"
@@ -52,13 +52,13 @@ Simply enter the password for `user` and you can access the server simply with `
 
 ### Alternative without ssh-copy-id
 
-An alternative way, if you don't want to (or can't) use `ssh-copy-id`, is to copy your public key manually to the server. To do this, you will have to copy the content of `/home/arturo/.ssh/id_rsa.pub`, to see it open it, or run `cat /home/arturo/.ssh/id_rsa.pub`:
+An alternative way, if you don't want to (or can't) use `ssh-copy-id`, is to copy your public key manually to the server. To do this, you will have to copy the content of `~/.ssh/id_rsa.pub`, to see it open it, or run `cat ~/.ssh/id_rsa.pub`:
 
 ```txt
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDCY+hLD34jAoCrin5sRN1mclVxhaykt0pRdvsLxFJxypkwALqb18nx3ryYNNKygWnpmR4hmD19wHGVZZi7nUrgUcMbES03RvOdigIasfgjGR/dijs3b+HhEZ+iyJJjkOQumEm+0en4lKsh8nWecrb6FsMLRXBvPsB5lhr4bu15dP7/Ui/55LRyP/6MpszhQufS6xlaWXa2lY1dRPY/XDuWE+datnsZAPqn6KM2TQOQAvo1IPj3lwShMLuyzEfwSMQKBM+y+ltu0k/ogra1pk+PRcGEqEnjkojTmS/tigOoa9u+Zo4CDBCsTjZViaFI6aRs/+FHmfrmlWz91J1dleMhp8feIlsfhnwAFRvRvd6yYzY8N10MnixwRjw1cyNDwJgBojmjfHsz879KtkF4lQ934e1nXIrIPos7thT7tx0e4TEpmNZiB5XpIPZe8AERzyYTNqFN9pOVRIlelakjATKxrjiiNZTVJrbcMA7yIXb8BgW0kyJb1AZgSUFqcpOsLQE= arturo@localhost
 ```
 
-So, access the server, you may have a way to access without SSH, because some VPS providers will allow you to access in other ways. Otherwise, simply `ssh user@domain.com`. Open the file `/home/user/.ssh/authorized_keys`, or create it if it does not exist, by running `nano /home/user/.ssh/authorized_keys`.
+So, access the server, you may have a way to access without SSH, because some VPS providers will allow you to access in other ways. Otherwise, simply `ssh user@domain.com`. Open the file `/home/user/.ssh/authorized_keys` (shortened `~/.ssh/authorized_keys`), or create it if it does not exist, by running `nano ~/.ssh/authorized_keys`.
 
 Finally, paste the content you just copied. You should now be able to access the server with `ssh user@domain.com` from your machine.
 
