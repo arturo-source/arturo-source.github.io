@@ -4,6 +4,7 @@ description: "Never retype an insecure password to log in via SSH. Learn to use 
 summary: "Never retype an insecure password to log in via SSH. Learn to use public-private keys."
 date: 2024-03-13T12:26:17+01:00
 draft: false
+tags: ["ssh"]
 ---
 
 To connect to a server, you would normally use `ssh user@domain.com`, and to copy a file `scp file.txt user@domain.com:/home/user/`. After running the command, it will ask you for the `user` password, but this is insecure and cumbersome. The correct way is to use a public-private key pair, and that way you won't have to re-enter the password.

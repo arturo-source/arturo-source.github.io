@@ -5,6 +5,7 @@ description: "No vuelvas a escribir una insegura contraseña para acceder por SS
 summary: "No vuelvas a escribir una insegura contraseña para acceder por SSH. Aprende a usar claves públicas-privadas."
 date: 2024-03-13T12:26:20+01:00
 draft: false
+tags: ["ssh"]
 ---
 
 Para conectarte a un servidor, normalmente usarías `ssh user@domain.com`, y para copiar un archivo `scp file.txt user@domain.com:/home/user/`. Después de ejecutar el comando, te pedirá la contraseña de `user`, pero esto es poco seguro, y pesado. La forma correcta es utilizar un par de claves pública-privada, y de esa forma no tendrás que volver a ingresar la contraseña.
