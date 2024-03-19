@@ -13,6 +13,8 @@ SSH is an application to communicate with other computers in an encrypted way. N
 
 And what is an SSH tunnel? Well, like a real-life tunnel, a tunnel communicates point A, and point B. Point A is your computer, and point B is **NOT** the `public.site` server, but the site you want to reach, let's say `private.site`. That is, `public.site` is not point B, **but rather the tunnel!**
 
+If what you want is to know how to make a reverse tunnel, I explain it [in this other article](/posts/ssh-reverse-tunneling/).
+
 ## What is the use of the SSH tunnel?
 
 The functionality of an SSH tunnel is very similar to that of a VPN, it allows us to make requests to `private.site` pretending that we are `public.site`. As with a VPN, our connection is encrypted. And, in addition, we can bypass port restrictions by the firewall, since we are accessing through an open SSH port.

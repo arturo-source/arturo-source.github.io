@@ -1,8 +1,8 @@
 ---
-title: "Qué es y cómo configurar un tunnel ssh"
+title: "Qué es y cómo configurar un túnel ssh"
 slug: "tunel-ssh"
-description: "Comprende los túneles SSH y configura tu primer tunel en un par de minutos."
-summary: "Comprende los túneles SSH y configura tu primer tunel en un par de minutos."
+description: "Comprende los túneles SSH y configura tu primer túnel en un par de minutos."
+summary: "Comprende los túneles SSH y configura tu primer túnel en un par de minutos."
 date: 2024-03-14T19:08:31+01:00
 draft: false
 tags: ["ssh"]
@@ -13,6 +13,8 @@ tags: ["ssh"]
 SSH es una aplicación para comunicarte con otros ordenadores de manera cifrada. Normalmente te conectas al servidor con `ssh user@public.site`, pero si utilizas el parámetro `-L` crearás un tunel a través del servidor.
 
 Y, ¿qué es un tunel SSH? Pues, como un tunel de la vida real, un tunel comunica un punto A, y un punto B. El punto A es tu ordenador, y el punto B **NO** es el servidor de `public.site`, sino el sitio al que quieras llegar, digamos `private.site`. Es decir, `public.site` no es el punto B, **¡sino que es el tunel!**
+
+Si lo que quieres es saber cómo hacer un tunel reverso, lo explico [en este otro artículo](/es/posts/tunel-ssh-inverso/).
 
 ## ¿Qué utilidad tiene el tunel SSH?
 
