@@ -14,7 +14,9 @@ First of all, you need to know that when you delete a file, the 0s and 1s remain
 ## Methods to recover a deleted file
 
 I think it's obvious, but if you deleted it conventionally, **have you tried recovering it from the trash?**
+
 If you deleted it using the `rm` command, or even if it was in the trash and you emptied it, there is specialized free software for this, such as **foremost**, **ext4magic**, or **extundelete**.
+
 But the method I'm going to teach you next is undoubtedly the best because of its ease, simplicity, and elegance. Have you ever used the `grep` tool? If the answer is 'yes', you're halfway done.
 
 ## Recovering a deleted file using grep
