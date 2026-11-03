@@ -49,10 +49,10 @@ languages:
         buttons:
           - name: Calcular equity del Poker (usando WASM)
             url: /es/posts/ejecutar-golang-en-el-navegador/#usar-poker-odds
-          - name: Buscaminas con React
-            url: /minesweeper/
-          - name: Snake en 100 lineas de JS
-            url: /snake-game/
+          - name: larder (explorador S3 escritorio)
+            url: https://github.com/arturo-source/larder
+          - name: find-duplicates (buscador de duplicados)
+            url: https://github.com/arturo-source/find-duplicates
 
 
 params:
@@ -64,10 +64,10 @@ params:
     buttons:
       - name: Calculate Poker equity (using WASM)
         url: /posts/execute-golang-in-browser/#use-poker-odds
-      - name: Minesweeper with React
-        url: /minesweeper/
-      - name: Snake in 100 JS lines
-        url: /snake-game/
+      - name: larder (S3 desktop browser)
+        url: https://github.com/arturo-source/larder
+      - name: find-duplicates (duplicate file finder)
+        url: https://github.com/arturo-source/find-duplicates
 
   # ShowAllPagesInArchive: true # show all 'content' folder, not only /posts/
   socialIcons:
